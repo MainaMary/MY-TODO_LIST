@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/cowomen.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.main_nav{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    /* position: fixed; */
+    z-index: 1;
+    width: 100%;
+}
+.header{
+    font-weight: 400;
+    font-size: 1.9em;
+    animation-name: mytitle;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    position: relative;
+    animation-fill-mode: 2;
+}
+@keyframes mytitle{
+    0%{top:-1000px;
+       font-size: 1.2em;
+    }
+    100%{top:0;
+        font-size: 1.9em;
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: mycontainer;
+    padding-top:100px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    position: relative;
+    animation-fill-mode: 2;
+}
+@keyframes mycontainer{
+    0%{left: -1000px;}
+    100%{left: 0;}
+}
+.wrapper{
+    width: 500px;
+    text-align: center;
+    margin: 40px 0;
+    border: 2px solid #000000;
+    background-color: whitesmoke;
+   
+}
+.wrapper h1, .wrapper h2{
+    margin: 20px 0;
+    color: red;
+}
+.input_addItems{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    
+}
+.input_addItems:focus{
+    outline: none;
+}
+.input_submit{
+    background-color: red;
+    color: #000000;
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 800;
+    border: 1px solid red;
+    animation-name: mybutton;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes mybutton{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.input_submit:hover{
+    background-color: #000000;
+    color: red;
+}
+.input_submit:focus{
+    outline: none;
+}
+
+#column_layout{
+  
+    margin-left: 50px;
+    margin-right: 30px;
+    padding: 10px 0;
+    list-style: none;
+}
+#column_layout .items{
+padding: 20px;
+/* border-bottom: 1px solid #000000; */
+border: 1px solid #000000;
+font-size: 1.2em;
+font-weight: bold;
+word-wrap: break-word;
+margin-left: 5px;
+text-align: start;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.delete_item{
+    margin-left:50px;
+
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: #000000;
+    color:rgb(209, 9, 9);
+    border: none;
+    font-size: 0.9em;
+    font-weight: 300;
+    border-radius: 10px;
+    cursor: pointer;
+    animation-name: mybutton;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.delete_item:hover{
+    color: #ffffff;
+}
+.delete_item:focus{
+ outline: none;
+}
+/* .clear_btn{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    margin-top: -100px;
+} */

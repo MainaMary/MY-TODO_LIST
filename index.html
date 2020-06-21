@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BOOKS LIST</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="main_nav">
+         <h1 class="header">MY DAILY RECORDS</h1>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="wrapper">
+                    <h1 class="my_title">Day by Day Account</h1>
+                    <form class="myform" id="form_wrapper">
+                        <input type="text" class="input_addItems">
+                        <input type="submit" class="input_submit" value="Add"><br>
+                    </form>  
+                    <h2 class="my_header">TASKS</h2>
+                    <ul id ="column_layout">
+                        <li class="items">Meet up with a Client
+                           <button class="delete_item">Delete</button> 
+                        </li>
+                        <li class="items">Finish a Project
+                            <button class="delete_item">Delete</button>
+                        </li>
+                        <li class="items">Go for Shopping<button class="delete_item">Delete</button></li>
+                        <li class="items">Read a journal <button class="delete_item">Delete</button></li>
+                    </ul>
+                 <!-- <a class="clear_btn" href="#">Clear books</a> -->
+                </div>
+            </div>
+         </main>
+         <script src="main_app.js"></script>
+        <!-- <script src="main.js"></script> -->
+        <!-- <script src ="app.js"></script> -->
+    </body>
+</html>
